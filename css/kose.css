@@ -1,0 +1,41 @@
+body {
+	font-family: "Verdana", "Geneva", "sans-serif";
+}
+
+#mapid { 
+	height: 600px; 
+	width: 1200px;
+	margin-top: 25px;
+}
+
+#mapheader1 {
+	color: #e81523;
+	background-color: rgba(255, 255, 255, 0.5);
+	position: fixed;
+	z-index: 5000;
+    top: 25px;
+    left: 75px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    padding: 4px;
+}
+#mapheader2 {
+	color: #e81523;
+	background-color: rgba(255, 255, 255, 0.5);
+	position: fixed;
+	z-index: 5000;
+    top: 72px;
+    left: 75px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    padding: 4px;
+}
+#pirati-logo {
+	position: fixed;
+	z-index: 5000;
+    bottom: 25px;
+    left: 75px;
+}
+#pirati-logo img {
+	width: 150px;
+}

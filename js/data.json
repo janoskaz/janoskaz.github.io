@@ -1,0 +1,123 @@
+{
+	"center": {
+		"lat": 48.97392,
+		"lon": 17.21077
+	},
+	"zoom": {
+		"default": 16,
+		"min": 14,
+		"max": 17
+	},
+	"bounds": {
+		"topLeft": 48.99,
+		"bottomLeft": 17.16,
+		"topRight": 48.95,
+		"bottomRight": 17.24
+	},
+	"markers": [{
+			"lat": 48.9746878,
+			"lon": 17.2225825,
+			"content": ["plastic", "paper", "glass", "electro", "chemicals", "bio"],
+			"type": "collection-yard",
+			"name": "<b>Sběrný dvůr Potoční</b><br><b>Út:</b>11:00 - 17:00<br><b>Čt:</b>11:00 - 17:00<br><b>So:</b>8:00 - 14:00"
+		},
+		{
+			"lat": 48.969236,
+			"lon": 17.2085706,
+			"content": ["plastic", "paper", "glass"],
+			"type": "container",
+			"name": "Písečná"
+		},
+		{
+			"lat": 48.9679194,
+			"lon": 17.2121861,
+			"content": ["plastic", "paper", "glass"],
+			"type": "container",
+			"name": "Lesní"
+		},
+		{
+			"lat": 48.97623,
+			"lon": 17.2096219,
+			"content": ["plastic", "paper", "glass"],
+			"type": "container",
+			"name": "Okružní"
+		},
+		{
+			"lat": 48.9744253,
+			"lon": 17.2066797,
+			"content": ["plastic", "paper", "glass"],
+			"type": "container",
+			"name": "Drahy"
+		},
+		{
+			"lat": 48.9680392,
+			"lon": 17.2168856,
+			"content": ["bio"],
+			"type": "container",
+			"name": "Vacenovská"
+		},
+		{
+			"lat": 48.9694372,
+			"lon": 17.2210267,
+			"content": ["plastic", "paper", "glass", "electro", "clothes"],
+			"type": "container",
+			"name": "Tyršova"
+		},
+		{
+			"lat": 48.9724078,
+			"lon": 17.2210831,
+			"content": ["plastic", "paper"],
+			"type": "container",
+			"name": "Kučovanská"
+		},
+		{
+			"lat": 48.9739042,
+			"lon": 17.2173333,
+			"content": ["plastic", "paper", "glass", "clothes"],
+			"type": "container",
+			"name": "Okružní"
+		},
+		{
+			"lat": 48.97217,
+			"lon": 17.2086994,
+			"content": ["plastic", "paper", "bio"],
+			"type": "container",
+			"name": "Luční"
+		},
+		{
+			"lat": 48.9715114,
+			"lon": 17.2070739,
+			"content": ["plastic", "paper"],
+			"type": "container",
+			"name": "Luční - DPS"
+		},
+		{
+			"lat": 48.97542,
+			"lon": 17.2017042,
+			"content": ["plastic", "paper"],
+			"type": "container",
+			"name": "Skoronská"
+		},
+		{
+			"lat": 48.9761031,
+			"lon": 17.1958356,
+			"content": ["plastic"],
+			"type": "container",
+			"name": "Skoronská - koupaliště"
+		},
+		{
+			"lat": 48.9742228,
+			"lon": 17.2005669,
+			"content": ["plastic", "paper"],
+			"type": "container",
+			"name": "Borová"
+		},
+		{
+			"lat": 48.9720328,
+			"lon": 17.1996119,
+			"content": ["plastic", "paper", "bio"],
+			"type": "container",
+			"name": "Borová - bytovky"
+		}
+	]
+}
