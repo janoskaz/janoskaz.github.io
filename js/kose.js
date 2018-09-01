@@ -117,7 +117,7 @@ getPopupText = function (content) {
 		case 'chemicals':
 			return 'chemikálie, oleje';
 		case 'bio':
-			return 'bio-odpad, dřevo';
+			return 'bio-odpad';
 		case 'clothes':
 			return 'oblečení';
 		default:
@@ -155,6 +155,7 @@ obj2Marker = function(obj, content) {
 
 /*markers*/
 $.getJSON("js/data.json", function(jsonObj) {
+	$("#mapheader2").html(jsonObj.subtitle);
 	/*init map with stamen toner lite map tiles*/
 	var layer = new L.StamenTileLayer('toner');
 	var map   = new L.map('mapid', {

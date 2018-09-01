@@ -1,7 +1,7 @@
 {
 	"center": {
-		"lat": 48.97392,
-		"lon": 17.21077
+		"lat": 48.9775,
+		"lon": 17.215
 	},
 	"zoom": {
 		"default": 16,
@@ -14,6 +14,7 @@
 		"topRight": 48.95,
 		"bottomRight": 17.24
 	},
+	"subtitle": "ve Vracově",
 	"markers": [{
 			"lat": 48.9746878,
 			"lon": 17.2225825,
@@ -118,6 +119,41 @@
 			"content": ["plastic", "paper", "bio"],
 			"type": "container",
 			"name": "Borová - bytovky"
+		},
+		{
+			"lat": 48.9793742,
+			"lon": 17.2115856,
+			"content": ["plastic", "paper", "bio","glass","electro"],
+			"type": "container",
+			"name": "Sokolská"
+		},
+		{
+			"lat": 48.9793494,
+			"lon": 17.2088603,
+			"content": ["plastic", "paper","glass"],
+			"type": "container",
+			"name": "Komenského - ZŠ"
+		},
+		{
+			"lat": 48.9800044,
+			"lon": 17.216284,
+			"content": ["plastic", "paper","glass"],
+			"type": "container",
+			"name": "Vlkošská - ENAPO"
+		},
+		{
+			"lat": 48.9792475,
+			"lon": 17.2198869,
+			"content": ["plastic", "paper", "glass"],
+			"type": "container",
+			"name": "Nádražní - COOP"
+		},
+		{
+			"lat": 48.9800536,
+			"lon": 17.2244278,
+			"content": ["plastic", "paper", "glass","electro"],
+			"type": "container",
+			"name": "Hlinická"
 		}
 	]
 }
