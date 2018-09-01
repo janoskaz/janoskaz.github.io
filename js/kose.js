@@ -1,3 +1,29 @@
+/*icon with hole*/
+L.NumberedDivIcon = L.Icon.extend({
+	options: {
+		iconUrl: 'img/red-bin-hole.png',
+		number: '',
+		shadowUrl: null,
+		iconSize: [40, 40],
+		iconAnchor: [20, 20],
+		popupAnchor: [0, -22],
+		className: 'leaflet-div-icon'
+	},
+
+	createIcon: function () {
+		var div = document.createElement('div');
+		var img = this._createImg(this.options['iconUrl']);
+		var numdiv = document.createElement('div');
+		numdiv.setAttribute ( "class", "number" );
+		numdiv.innerHTML = this.options['number'] || '';
+		div.appendChild ( img );
+		div.appendChild ( numdiv );
+		this._setIconStyles(div, 'icon');
+		return div;
+	},
+});
+
+
 /*icons*/
 var icons = {
 	greenBin: L.icon({
@@ -10,9 +36,9 @@ var icons = {
 	redBin: L.icon({
 	    iconUrl: 'img/red-bin.png',
 
-	    iconSize:     [40, 40], // size of the icon
-	    iconAnchor:   [20, 20], // point of the icon which will correspond to marker's location
-	    popupAnchor:  [0, -22] // point from which the popup should open relative to the iconAnchor
+	    iconSize:     [30, 30], // size of the icon
+	    iconAnchor:   [15, 15], // point of the icon which will correspond to marker's location
+	    popupAnchor:  [0, -18] // point from which the popup should open relative to the iconAnchor
 	}),
 	blueBin: L.icon({
 	    iconUrl: 'img/blue-bin.png',
@@ -73,7 +99,6 @@ var icons = {
 
 /*correct icon based on marker content*/
 getIcon = function (content) {
-	var ic = icons.redBin;
 	switch (content) {
 		case 'plastic':
 			ic = icons.yellowBin;
@@ -91,7 +116,7 @@ getIcon = function (content) {
 			ic = icons.brownBin;
 			break;
 		case 'electro':
-			ic = icons.azureBin;
+			ic = icons.redBin;
 			break;
 		case 'clothes':
 			ic = icons.orangeBin;
@@ -131,7 +156,7 @@ obj2Marker = function(obj, content) {
 	if (obj.content.length === 1) {
 		ic = getIcon(content);
 	} else {
-		ic = (obj.type === 'container' ? icons.redBin : icons.redRecycle);
+		ic = (obj.type === 'container' ? new L.NumberedDivIcon({number: obj.content.length.toString()}) : icons.redRecycle);
 	}
 	var marker = new L.marker([obj.lat, obj.lon], {icon: ic});
 	marker.content = content;
@@ -171,6 +196,7 @@ $.getJSON("js/data.json", function(jsonObj) {
 	/*overlapping map instance*/
 	var oms = new OverlappingMarkerSpiderfier(map,{keepSpiderfied: true, legWeight: 0});
 
+	/*click on marker - open popup*/
 	var popup = new L.Popup();
 	oms.addListener('click', function(marker) {
 	  popup.setContent(marker.desc);
@@ -190,7 +216,7 @@ $.getJSON("js/data.json", function(jsonObj) {
 	/*set red icon and popup text*/
 	oms.addListener('unspiderfy', function(markers) {
 	  for (var i = 0, len = markers.length; i < len; i ++) {
-	  	var ic = (markers[i].type === 'collection-yard' ? icons.redRecycle : icons.redBin);
+	  	var ic = (markers[i].type === 'collection-yard' ? icons.redRecycle : new L.NumberedDivIcon({number: markers.length.toString()}));
 	  	markers[i].setIcon(ic);
 	  	markers[i]._popup.setContent(markers[i].name)
 	  }
