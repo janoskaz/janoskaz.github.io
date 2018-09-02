@@ -192,7 +192,6 @@ $.getJSON("js/data.json", function(jsonObj) {
 	map.setMaxBounds(L.latLngBounds(L.latLng(jsonObj.bounds.topLeft, jsonObj.bounds.bottomLeft),L.latLng(jsonObj.bounds.topRight, jsonObj.bounds.bottomRight)));
 	map.addLayer(layer);
 
-
 	/*overlapping map instance*/
 	var oms = new OverlappingMarkerSpiderfier(map,{keepSpiderfied: true, legWeight: 0});
 
@@ -230,6 +229,5 @@ $.getJSON("js/data.json", function(jsonObj) {
 			map.addLayer(m);
 			oms.addMarker(m);
 		}
-		
 	}
 });

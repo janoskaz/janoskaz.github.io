@@ -1,11 +1,11 @@
 body {
 	font-family: "Verdana", "Geneva", "sans-serif";
+	padding: 0;
+    margin: 0;
 }
-
-#mapid { 
-	height: 600px; 
-	width: 1200px;
-	margin-top: 25px;
+html, body, #mapid {
+    height: 100%;
+    width: 100%;
 }
 
 #mapheader1 {
