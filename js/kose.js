@@ -181,6 +181,10 @@ obj2Marker = function(obj, content) {
 /*markers*/
 $.getJSON("js/data.json", function(jsonObj) {
 	$("#mapheader2").html(jsonObj.subtitle);
+	console.log(jsonObj);
+	if (jsonObj.piratiLogo) {
+		$("#pirati-logo").show();
+	}
 	/*init map with stamen toner lite map tiles*/
 	var layer = new L.StamenTileLayer('toner');
 	var map   = new L.map('mapid', {

@@ -31,6 +31,7 @@ html, body, #mapid {
     padding: 4px;
 }
 #pirati-logo {
+	display: none;
 	position: fixed;
 	z-index: 5000;
     bottom: 25px;

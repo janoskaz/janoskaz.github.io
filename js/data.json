@@ -15,6 +15,7 @@
 		"bottomRight": 17.24
 	},
 	"subtitle": "ve Vracově",
+	"piratiLogo": false,
 	"markers": [{
 			"lat": 48.9746878,
 			"lon": 17.2225825,
