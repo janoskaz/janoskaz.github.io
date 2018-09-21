@@ -1,0 +1,83 @@
+{
+	"center": {
+		"lat": 48.8813194,
+		"lon": 17.5203356
+	},
+	"zoom": {
+		"default": 16,
+		"min": 14,
+		"max": 17
+	},
+	"bounds": {
+		"topLeft": 48.92,
+		"bottomLeft": 17.48,
+		"topRight": 48.84,
+		"bottomRight": 17.56
+	},
+	"subtitle": "ve Velké nad Veličkou",
+	"piratiLogo": false,
+	"markers": [{
+			"lat": 48.8663094,
+			"lon": 17.5265986,
+			"content": ["plastic", "paper", "glass-all"],
+			"type": "container",
+			"name": "Kružica - Lán"
+		},
+		{
+			"lat": 48.8736197,
+			"lon": 17.5197142,
+			"content": ["plastic", "paper", "glass-all","glass-white"],
+			"type": "container",
+			"name": "Myjavské rozcestí"
+		},
+		{
+			"lat": 48.8774011,
+			"lon": 17.5181906,
+			"content": ["plastic", "paper", "glass-all","glass-white", "clothes", "electro"],
+			"type": "container",
+			"name": "Jednota Řádek"
+		},
+		{
+			"lat": 48.8853828,
+			"lon": 17.5140814,
+			"content": ["plastic", "paper", "glass-all","glass-white", "clothes", "electro"],
+			"type": "container",
+			"name": "Jednota bytovky"
+		},
+		{
+			"lat": 48.8803558,
+			"lon": 17.5151489,
+			"content": ["plastic", "paper", "glass-all","glass-white", "clothes"],
+			"type": "container",
+			"name": "Hala"
+		},
+		{
+			"lat": 48.8840497,
+			"lon": 17.5153839,
+			"content": ["plastic", "paper", "glass-all","glass-white"],
+			"type": "container",
+			"name": "Lékárna Na Dolině"
+		},
+		{
+			"lat": 48.8807836,
+			"lon": 17.5183553,
+			"content": ["plastic", "paper", "glass-all","glass-white"],
+			"type": "container",
+			"name": "Adamovská"
+		},
+		{
+			"lat": 48.8877706,
+			"lon": 17.5231456,
+			"content": ["plastic", "paper", "glass-all","glass-white"],
+			"type": "container",
+			"name": "Hřbitov"
+		},
+		{
+			"lat": 48.8844247,
+			"lon": 17.5184517,
+			"content": ["plastic", "paper", "glass-all","glass-white"],
+			"type": "container",
+			"name": "Závodí"
+		}
+	]
+}
