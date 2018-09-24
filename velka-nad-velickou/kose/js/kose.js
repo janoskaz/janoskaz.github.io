@@ -29,71 +29,71 @@ var icons = {
 	greenBin: L.icon({
 	    iconUrl: 'img/green-bin.png',
 
-	    iconSize:     [30, 30], // size of the icon
-	    iconAnchor:   [15, 15], // point of the icon which will correspond to marker's location
-	    popupAnchor:  [0, -18] // point from which the popup should open relative to the iconAnchor
+	    iconSize:     [30, 30],
+	    iconAnchor:   [15, 15],
+	    popupAnchor:  [0, -18]
 	}),
 	redBin: L.icon({
 	    iconUrl: 'img/red-bin.png',
 
-	    iconSize:     [30, 30], // size of the icon
-	    iconAnchor:   [15, 15], // point of the icon which will correspond to marker's location
-	    popupAnchor:  [0, -18] // point from which the popup should open relative to the iconAnchor
+	    iconSize:     [30, 30],
+	    iconAnchor:   [15, 15],
+	    popupAnchor:  [0, -18]
 	}),
 	blueBin: L.icon({
 	    iconUrl: 'img/blue-bin.png',
 
-	    iconSize:     [30, 30], // size of the icon
-	    iconAnchor:   [15, 15], // point of the icon which will correspond to marker's location
-	    popupAnchor:  [0, -18] // point from which the popup should open relative to the iconAnchor
+	    iconSize:     [30, 30],
+	    iconAnchor:   [15, 15],
+	    popupAnchor:  [0, -18]
 	}),
 	yellowBin: L.icon({
 	    iconUrl: 'img/yellow-bin.png',
 
-	    iconSize:     [30, 30], // size of the icon
-	    iconAnchor:   [15, 15], // point of the icon which will correspond to marker's location
-	    popupAnchor:  [0, -18] // point from which the popup should open relative to the iconAnchor
+	    iconSize:     [30, 30],
+	    iconAnchor:   [15, 15],
+	    popupAnchor:  [0, -18]
 	}),
 	brownBin: L.icon({
 	    iconUrl: 'img/brown-bin.png',
 
-	    iconSize:     [30, 30], // size of the icon
-	    iconAnchor:   [15, 15], // point of the icon which will correspond to marker's location
-	    popupAnchor:  [0, -18] // point from which the popup should open relative to the iconAnchor
+	    iconSize:     [30, 30],
+	    iconAnchor:   [15, 15],
+	    popupAnchor:  [0, -18]
 	}),
 	azureBin: L.icon({
 	    iconUrl: 'img/azure-bin.png',
 
-	    iconSize:     [30, 30], // size of the icon
-	    iconAnchor:   [15, 15], // point of the icon which will correspond to marker's location
-	    popupAnchor:  [0, -18] // point from which the popup should open relative to the iconAnchor
+	    iconSize:     [30, 30],
+	    iconAnchor:   [15, 15],
+	    popupAnchor:  [0, -18]
 	}),
 	purpleBin: L.icon({
 	    iconUrl: 'img/purple-bin.png',
 
-	    iconSize:     [30, 30], // size of the icon
-	    iconAnchor:   [15, 15], // point of the icon which will correspond to marker's location
-	    popupAnchor:  [0, -18] // point from which the popup should open relative to the iconAnchor
+	    iconSize:     [30, 30],
+	    iconAnchor:   [15, 15],
+	    popupAnchor:  [0, -18]
 	}),
 	orangeBin: L.icon({
 	    iconUrl: 'img/orange-bin.png',
 
-	    iconSize:     [30, 30], // size of the icon
-	    iconAnchor:   [15, 15], // point of the icon which will correspond to marker's location
-	    popupAnchor:  [0, -18] // point from which the popup should open relative to the iconAnchor
+	    iconSize:     [30, 30],
+	    iconAnchor:   [15, 15],
+	    popupAnchor:  [0, -18]
 	}),
 	blackBin: L.icon({
 	    iconUrl: 'img/black-bin.png',
 
-	    iconSize:     [40, 40], // size of the icon
-	    iconAnchor:   [20, 20], // point of the icon which will correspond to marker's location
-	    popupAnchor:  [0, -22] // point from which the popup should open relative to the iconAnchor
+	    iconSize:     [40, 40],
+	    iconAnchor:   [20, 20],
+	    popupAnchor:  [0, -22]
 	}),
 	redRecycle: L.icon({
 	    iconUrl: 'img/warehouse.png',
 
-	    iconSize:     [50, 50], // size of the icon
-	    iconAnchor:   [25, 25] // point of the icon which will correspond to marker's location
+	    iconSize:     [50, 50],
+	    iconAnchor:   [25, 25]
 	}),
 }
 
@@ -121,6 +121,9 @@ getIcon = function (content) {
 		case 'clothes':
 			ic = icons.orangeBin;
 			break;
+		case 'warehouse':
+			ic = icons.redRecycle;
+			break;
 		default:
 			ic = icons.blackBin;
 			break;
@@ -147,6 +150,8 @@ getPopupText = function (content) {
 			return 'bio-odpad';
 		case 'clothes':
 			return 'oděvy';
+		case 'warehouse':
+			return '<b>Sběrný dvůr</b><br><b>Út:</b>8 - 17<br><b>St:</b>8 - 17 (březen - říjen)<br><b>St:</b>8 - 15 (listopad - únor)<br><b>Čt:</b>8 - 15<br><b>Pá:</b>8 - 15<br><b>So:</b>8 - 12<br><b>Lze odložit veškerý tříděný odpad</b>';
 		default:
 			return null;
 	}

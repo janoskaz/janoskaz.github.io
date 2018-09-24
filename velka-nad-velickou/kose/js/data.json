@@ -1,6 +1,6 @@
 {
 	"center": {
-		"lat": 48.8813194,
+		"lat": 48.8795,
 		"lon": 17.5203356
 	},
 	"zoom": {
@@ -78,6 +78,13 @@
 			"content": ["plastic", "paper", "glass-all","glass-white"],
 			"type": "container",
 			"name": "Závodí"
+		},
+		{
+			"lat": 48.8970578,
+			"lon": 17.5112697,
+			"content": ["warehouse"],
+			"type": "collection-yard",
+			"name": "<b>Sběrný dvůr</b><br><b>Út:</b>11:00 - 17:00<br><b>Čt:</b>11:00 - 17:00<br><b>So:</b>8:00 - 14:00"
 		}
 	]
 }
