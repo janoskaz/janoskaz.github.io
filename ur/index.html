@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  	<head>
+	    <title>Královská hra města Ur</title>
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge" />   
+	    <meta charset="utf-8">
+	    <meta name="viewport" content="width=device-width, initial-scale=1"> 
+	    <!-- favicon -->
+	     <!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+		<!-- jQuery library -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+		<!-- Latest compiled JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
+	</head>
+	<body>
+		<script type="text/javascript">
+			$(document).ready(function(){
+			    $( "#throwDice" ).click(function() {
+			    	let sum = 0;
+					for (var i = 1; i < 5; i++) {
+						let res = throwDice(i);
+						console.log(res);
+					  	sum += (res ? 1 : 0);
+					  	$('#count').html(sum);
+					}
+					//console.log(sum);
+					
+				});
+
+				throwDice = function(n) {
+					let imgId = '#img' + n;
+					var random_boolean = Math.random() >= 0.5;
+					if (random_boolean) {
+						$(imgId).attr("src","dice_ok.png");
+					} else {
+						$(imgId).attr("src","dice_nok.png");
+					}
+					return random_boolean;
+				}
+			});
+			
+		</script>
+		
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-sm-2">
+			    </div>
+			    <div class="col-sm-2 col-offset-2">
+			    	<img id="img1" class="img-responsive" src="dice_ok.png">
+			    </div>
+			    <div class="col-sm-2">
+			    	<img id="img2" class="img-responsive" src="dice_ok.png">
+			    </div>
+			    <div class="col-sm-2">
+			    	<img id="img3" class="img-responsive" src="dice_ok.png">
+			    </div>
+			    <div class="col-sm-2">
+			    	<img  id="img4" class="img-responsive" src="dice_ok.png">
+			    </div>
+			</div>
+			<div class="row">
+				<div class="col-sm-5">
+			    </div>
+				<div class="col-md-1"> 
+					<button id="throwDice" class="btn btn-primary btn-lg text-center">Hoď kostkou</button>	
+				</div>
+			</div>
+			<div class="row">
+				<h1 id="count" class="text-center"></h1>	
+			</div>
+		</div>
+	</body>
+</html>
