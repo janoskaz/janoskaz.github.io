@@ -11,6 +11,8 @@
 
 		<!-- jQuery library -->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<!-- jQuery library rotate -->
+		<script src="jQuery-rotate.js"></script>
 
 		<!-- Latest compiled JavaScript -->
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
@@ -19,16 +21,36 @@
 		<script type="text/javascript">
 			$(document).ready(function(){
 			    $( "#throwDice" ).click(function() {
-			    	let sum = 0;
-					for (var i = 1; i < 5; i++) {
-						let res = throwDice(i);
-						console.log(res);
-					  	sum += (res ? 1 : 0);
-					  	$('#count').html(sum);
-					}
+					rotateImages(0);
+					setTimeout(function(){
+						let sum = 0;
+						for (var i = 1; i < 5; i++) {
+							let res = throwDice(i);
+							console.log(res);
+						  	sum += (res ? 1 : 0);
+						  	$('#count').html(sum);
+						}						
+					}, 1000);
 					//console.log(sum);
 					
 				});
+
+				function rotateImage(n,counter){
+					let imgId = '#img' + n;
+					$(imgId).rotate({angle:72*counter});
+				};
+
+				function rotateImages(counter){
+				  if(counter < 5){
+				    setTimeout(function(){
+				      counter++;
+				      for (var i = 1; i < 5; i++) {
+						rotateImage(i,counter);
+					  }
+				      rotateImages(counter);
+				    }, 200);
+				  }
+				}
 
 				throwDice = function(n) {
 					let imgId = '#img' + n;
@@ -39,7 +61,7 @@
 						$(imgId).attr("src","dice_nok.png");
 					}
 					return random_boolean;
-				}
+				};
 			});
 			
 		</script>
