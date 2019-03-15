@@ -188,7 +188,6 @@ obj2Marker = function(obj, content) {
 /*markers*/
 $.getJSON("js/data.json", function(jsonObj) {
 	$("#mapheader2").html(jsonObj.subtitle);
-	console.log(jsonObj);
 	if (jsonObj.piratiLogo) {
 		$("#pirati-logo").show();
 	}
@@ -240,5 +239,18 @@ $.getJSON("js/data.json", function(jsonObj) {
 			map.addLayer(m);
 			oms.addMarker(m);
 		}
+	};
+	/*add odpadaky to map*/
+	var odpadaky = jsonObj.odpadaky;
+	for (var i = 0; i < odpadaky.length; i++) {
+		let lonlat = [odpadaky[i].lat, odpadaky[i].lon];
+		var circle = L.circleMarker(lonlat, {
+			fillColor: '#e81523',
+			fillOpacity: 1,
+			stroke: false,
+			radius: 5
+		});
+		circle.bindTooltip('odpadkový koš', {closeButton: false});
+		circle.addTo(map);
 	}
 });
