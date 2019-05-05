@@ -1,0 +1,16 @@
+h1 {
+	color: #e81523;
+	text-transform: uppercase;
+    letter-spacing: 0.25rem;
+    padding: 0.25rem;
+}
+
+svg {
+	fill: #e81523;
+	height: 3rem;
+	width: 3rem;
+}
+
+.first-td {
+	font-size: 1.4rem;
+}
