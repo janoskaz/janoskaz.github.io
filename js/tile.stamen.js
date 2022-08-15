@@ -7,16 +7,16 @@
 var SUBDOMAINS = "a. b. c. d.".split(" "),
     MAKE_PROVIDER = function(layer, type, minZoom, maxZoom) {
         return {
-            "url":          ["http://{S}tile.stamen.com/", layer, "/{Z}/{X}/{Y}.", type].join(""),
+            "url":          ["https://{S}tile.stamen.com/", layer, "/{Z}/{X}/{Y}.", type].join(""),
             "type":         type,
             "subdomains":   SUBDOMAINS.slice(),
             "minZoom":      minZoom,
             "maxZoom":      maxZoom,
             "attribution":  [
-                'Map tiles by <a href="http://stamen.com/">Stamen Design</a>, ',
-                'under <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a>. ',
-                'Data by <a href="http://openstreetmap.org/">OpenStreetMap</a>, ',
-                'under <a href="http://creativecommons.org/licenses/by-sa/3.0">CC BY SA</a>.'
+                'Map tiles by <a href="https://stamen.com/">Stamen Design</a>, ',
+                'under <a href="https://creativecommons.org/licenses/by/3.0">CC BY 3.0</a>. ',
+                'Data by <a href="https://openstreetmap.org/">OpenStreetMap</a>, ',
+                'under <a href="https://creativecommons.org/licenses/by-sa/3.0">CC BY SA</a>.'
             ].join("")
         };
     },
@@ -26,7 +26,7 @@ var SUBDOMAINS = "a. b. c. d.".split(" "),
         "terrain-classic": MAKE_PROVIDER("terrain-classic", "png", 0, 18),
         "watercolor":   MAKE_PROVIDER("watercolor", "jpg", 1, 18),
         "trees-cabs-crime": {
-            "url": "http://{S}.tiles.mapbox.com/v3/stamen.trees-cabs-crime/{Z}/{X}/{Y}.png",
+            "url": "https://{S}.tiles.mapbox.com/v3/stamen.trees-cabs-crime/{Z}/{X}/{Y}.png",
             "type": "png",
             "subdomains": "a b c d".split(" "),
             "minZoom": 11,
@@ -36,15 +36,15 @@ var SUBDOMAINS = "a. b. c. d.".split(" "),
                 {"lat": 37.684, "lon": -122.313}
             ],
             "attribution": [
-                'Design by Shawn Allen at <a href="http://stamen.com/">Stamen</a>.',
+                'Design by Shawn Allen at <a href="https://stamen.com/">Stamen</a>.',
                 'Data courtesy of <a href="http://fuf.net/">FuF</a>,',
-                '<a href="http://www.yellowcabsf.com/">Yellow Cab</a>',
-                '&amp; <a href="http://sf-police.org/">SFPD</a>.'
+                '<a href="https://www.yellowcabsf.com/">Yellow Cab</a>',
+                '&amp; <a href="https://sf-police.org/">SFPD</a>.'
             ].join(" ")
         }
     };
 
-PROVIDERS["terrain-classic"].url = "http://{S}tile.stamen.com/terrain/{Z}/{X}/{Y}.png";
+PROVIDERS["terrain-classic"].url = "https://{S}tile.stamen.com/terrain/{Z}/{X}/{Y}.png";
 
 // set up toner and terrain flavors
 setupFlavors("toner", ["hybrid", "labels", "lines", "background", "lite"]);
@@ -75,10 +75,10 @@ for (var i = 0; i < odbl.length; i++) {
 
     PROVIDERS[key].retina = true;
     PROVIDERS[key].attribution = [
-        'Map tiles by <a href="http://stamen.com/">Stamen Design</a>, ',
-        'under <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a>. ',
+        'Map tiles by <a href="https://stamen.com/">Stamen Design</a>, ',
+        'under <a href="https://creativecommons.org/licenses/by/3.0">CC BY 3.0</a>. ',
         'Data by <a href="http://openstreetmap.org">OpenStreetMap</a>, ',
-        'under <a href="http://www.openstreetmap.org/copyright">ODbL</a>.'
+        'under <a href="https://www.openstreetmap.org/copyright">ODbL</a>.'
     ].join("");
 }
 
