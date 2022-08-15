@@ -181,12 +181,11 @@ obj2Marker = function(obj, content) {
 /*markers*/
 $.getJSON("js/data.json", function(jsonObj) {
 	$("#mapheader2").html(jsonObj.subtitle);
-	console.log(jsonObj);
 	if (jsonObj.piratiLogo) {
 		$("#pirati-logo").show();
 	}
 	/*init map with stamen toner lite map tiles*/
-	var layer = new L.StamenTileLayer('toner');
+	var layer = new L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png');
 	var map   = new L.map('mapid', {
 	    center: new L.LatLng(jsonObj.center.lat, jsonObj.center.lon),
 	    zoom:   jsonObj.zoom.default,
