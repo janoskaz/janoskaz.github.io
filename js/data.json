@@ -18,7 +18,7 @@
 	"markers": [{
 			"lat": 48.9746878,
 			"lon": 17.2225825,
-			"content": ["plastic", "paper", "glass", "electro", "chemicals", "bio"],
+			"content": ["plastic", "paper", "glass", "electro", "chemicals", "bio", "clothes"],
 			"type": "collection-yard",
 			"name": "<b>Sběrný dvůr Potoční</b><br><b>Út:</b>11:00 - 17:00<br><b>Čt:</b>11:00 - 17:00<br><b>So:</b>8:00 - 14:00"
 		},
