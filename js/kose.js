@@ -181,9 +181,6 @@ obj2Marker = function(obj, content) {
 /*markers*/
 $.getJSON("js/data.json", function(jsonObj) {
 	$("#mapheader2").html(jsonObj.subtitle);
-	if (jsonObj.piratiLogo) {
-		$("#pirati-logo").show();
-	}
 	/*init map*/
 	var layer = new L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png');
 	var map   = new L.map('mapid', {

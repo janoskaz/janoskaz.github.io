@@ -15,7 +15,6 @@
 		"bottomRight": 17.24
 	},
 	"subtitle": "ve Vracově",
-	"piratiLogo": false,
 	"markers": [{
 			"lat": 48.9746878,
 			"lon": 17.2225825,
@@ -33,7 +32,7 @@
 		{
 			"lat": 48.9679194,
 			"lon": 17.2121861,
-			"content": ["plastic", "paper", "glass"],
+			"content": ["plastic", "paper", "glass","bio"],
 			"type": "container",
 			"name": "Lesní"
 		},
@@ -61,7 +60,7 @@
 		{
 			"lat": 48.9694372,
 			"lon": 17.2210267,
-			"content": ["plastic", "paper", "glass", "electro", "clothes"],
+			"content": ["plastic", "paper", "glass", "electro"],
 			"type": "container",
 			"name": "Tyršova"
 		},
@@ -75,7 +74,7 @@
 		{
 			"lat": 48.9739042,
 			"lon": 17.2173333,
-			"content": ["plastic", "paper", "glass", "clothes"],
+			"content": ["plastic", "paper", "glass"],
 			"type": "container",
 			"name": "Okružní"
 		},
@@ -110,7 +109,7 @@
 		{
 			"lat": 48.9742228,
 			"lon": 17.2005669,
-			"content": ["plastic", "paper"],
+			"content": ["plastic", "paper", "glass"],
 			"type": "container",
 			"name": "Borová"
 		},
@@ -155,6 +154,13 @@
 			"content": ["plastic", "paper", "glass","electro"],
 			"type": "container",
 			"name": "Hlinická"
+		},
+		{
+			"lat": 48.9701686,
+			"lon": 17.2144125,
+			"content": ["plastic", "paper"],
+			"type": "container",
+			"name": "Starce"
 		}
 	]
 }
