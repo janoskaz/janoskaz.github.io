@@ -117,7 +117,7 @@ var jsonObj = {
         {
             "lat": 48.9760458,
             "lon": 17.2097050,
-            "text": "Stojící auta v blízkosti přechodu brání rozhledu"
+            "text": "Stojící auta v blízkosti přechodu před pekárnou brání rozhledu"
         },
         {
             "lat": 48.9794856,
@@ -223,6 +223,11 @@ var jsonObj = {
             "lat": 48.9698236,
             "lon": 17.2049683,
             "text": "Nepřehledné napojení ulice Hodonínská na ulici Drahy - ostrý úhel napojení"
+        },
+        {
+            "lat": 48.9701475,
+            "lon": 17.2200744,
+            "text": "Vybudovat podélné stání v ulici Sportovní před bytovými domy"
         }
     ]
  
