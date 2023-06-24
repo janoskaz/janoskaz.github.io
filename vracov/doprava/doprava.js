@@ -238,7 +238,12 @@ var jsonObj = {
             "lat": 48.9710947,
             "lon": 17.2199672,
             "text": "Vybudování chodníku na ulici Sportovní"
-        }
+        },
+        {
+            "lat": 48.9764717,
+            "lon": 17.2214906,
+            "text": "Ulice Nádražní ve špatném stavu"
+        }   
     ]
  
 }
