@@ -37,22 +37,22 @@ var jsonObj = {
         {
             "lat": 48.9715667,
             "lon": 17.2147422,
-            "text": "Nedodržování přednosti zprava v ulici Dlouhá"
+            "text": "Nedodržování přednosti zprava v ulici Dubová"
         },
         {
             "lat": 48.9729331,
             "lon": 17.2160406,
-            "text": "Nedodržování přednosti zprava na křižovatce Dlouhá / Strážnická"
+            "text": "Nedodržování přednosti zprava na křižovatce Dubová / Strážnická"
         },
         {
             "lat": 48.9702003,
             "lon": 17.2141414,
-            "text": "Nedodržování přednosti zprava na křižovatce Dlouhá / Starce"
+            "text": "Nedodržování přednosti zprava na křižovatce Dubová / Starce"
         },
         {
             "lat": 48.9726583,
             "lon": 17.2154181,
-            "text": "Špatný rozhled v úzké části ulice Dlouhá"
+            "text": "Špatný rozhled v úzké části ulice Dubová"
         },
         {
             "lat": 48.9747078,
@@ -152,7 +152,7 @@ var jsonObj = {
         {
             "lat": 48.9714222,
             "lon": 17.2111053,
-            "text": "Nedodržování přednosti zprava na křižovatce Dlouhá / Úzká"
+            "text": "Nedodržování přednosti zprava na křižovatce Dubová / Úzká"
         },
         {
             "lat": 48.9734717,
@@ -228,6 +228,16 @@ var jsonObj = {
             "lat": 48.9701475,
             "lon": 17.2200744,
             "text": "Vybudovat podélné stání v ulici Sportovní před bytovými domy"
+        },
+        {
+            "lat": 48.9788978,
+            "lon": 17.2198278,
+            "text": "Zpomalení dopravy na ulici Nádražní mezi kolejemi a náměstím"
+        },
+        {
+            "lat": 48.9710947,
+            "lon": 17.2199672,
+            "text": "Vybudování chodníku na ulici Sportovní"
         }
     ]
  
